@@ -1,0 +1,130 @@
+.footer {
+  font-family: 'Rubik';
+
+  // .body
+  .top-footer {
+    padding: 3.75rem 0;
+
+    // .top-footer__container
+    &__container {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+    }
+
+    // .adress
+    .adress {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      max-width: 20rem;
+      margin-right: 5rem;
+
+      // .adress__logo
+      &__logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 2rem;
+        color: #85b839;
+
+        // .adress__logo-text
+        &-text {
+          font-size: 1.5rem;
+          line-height: 1.75em;
+          font-weight: 500;
+          color: #555555;
+        }
+      }
+
+      // .adress__text
+      &__text {
+        font-size: 1rem;
+        line-height: 2em;
+      }
+
+      // .adress__socials
+      &__socials {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1rem;
+
+        &-item {
+          font-size: 1.12rem;
+          cursor: pointer;
+          transition: all 0.4s;
+
+          &:hover {
+            color: #85b839;
+          }
+        }
+      }
+    }
+
+    // .top-footer__items
+    &__items {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      // .body
+      .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1.12rem;
+        line-height: 2.5em;
+
+        // .body__tile
+        &__title {
+          font-weight: 500;
+        }
+
+        // .body__item
+        &__item {
+          cursor: pointer;
+          font-weight: 400;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          transition: all 0.4s;
+
+          &:hover {
+            color: #85b839;
+          }
+        }
+      }
+    }
+  }
+
+  // .bottom
+  .bottom {
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+
+    // .bottom__container
+    &__container {
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .body {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      &__item {
+        cursor: pointer;
+        transition: all 0.4s;
+
+        &:hover {
+          box-shadow: inset 0 -2px 0 -1px rgba(85, 85, 85, 0.5);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+// .nav
+.siteBar {
+  font-family: 'Rubik';
+  display: flex;
+  background: #f7f8fa;
+
+  // .siteBar__list
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    row-gap: 1rem;
+    margin-left: 82px;
+
+    // .siteBar__list-item"
+    &-item {
+      font-size: 0.875rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 25px 0;
+      cursor: pointer;
+      transition: box-shadow 0.5s;
+
+      &:hover {
+        box-shadow: inset 0 -3px 0 -1px rgba(85, 85, 85, 0.5);
+      }
+    }
+  }
+}

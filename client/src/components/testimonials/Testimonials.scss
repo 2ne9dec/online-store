@@ -1,0 +1,83 @@
+.testimonials {
+  font-family: 'Mulish';
+  padding: 0 70px;
+  position: relative;
+  padding-bottom: 55px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  &__block {
+    background: #f8fafb;
+    width: 51rem;
+    height: 19.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-radius: 0.5rem;
+
+    &-img {
+      position: absolute;
+      top: -2.75em;
+      left: calc(50% - 2.75em);
+      width: 5.5rem;
+      height: 5.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      object-fit: cover;
+    }
+
+    &-text {
+      padding: 32px 125px;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.5em;
+    }
+
+    &-name {
+      font-size: 1.5rem;
+      line-height: 1.75em;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+  &__arrow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    color: #cccccc;
+    font-size: 38px;
+
+    &-back {
+      transform: rotate(90deg);
+      cursor: pointer;
+      margin-left: -80px;
+      transition: all 0.4s;
+
+      &:hover {
+        color: #7ac751;
+      }
+    }
+
+    &-next {
+      transform: rotate(-90deg);
+      cursor: pointer;
+      margin-right: -80px;
+      transition: all 0.4s;
+
+      &:hover {
+        color: #7ac751;
+      }
+    }
+  }
+}

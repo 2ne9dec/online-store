@@ -1,0 +1,73 @@
+// .offer
+.offer {
+  font-family: 'Mulish';
+  padding-bottom: 45px;
+
+  // .offer__container
+  &__container {
+    line-height: 26px;
+  }
+
+  // .offer__items
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      'block-1 block-2'
+      'block-1 block-3';
+    grid-gap: 1rem;
+
+    // .block
+    .block {
+      position: relative;
+
+      &:nth-child(1) {
+        grid-area: block-1;
+      }
+
+      &:nth-child(2) {
+        grid-area: block-2;
+      }
+
+      &:nth-child(3) {
+        grid-area: block-3;
+      }
+
+      // .block__offer
+      &__offer {
+        position: absolute;
+        top: 37px;
+        left: 24px;
+
+        // .block__offer-title
+        &-title {
+          font-size: 22px;
+          font-weight: 600;
+        }
+
+        // .block__offer-description
+        &-description {
+          font-size: 20px;
+          color: #7ac751;
+          font-weight: 600;
+        }
+
+        // .block__offer-readMore
+        &-readMore {
+          color: #757575;
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 3px;
+          transition: opacity 0.3s;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

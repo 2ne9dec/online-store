@@ -1,0 +1,90 @@
+.specialOffer {
+  padding-bottom: 45px;
+  font-family: 'Mulish';
+
+  // .specialOffer__items
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+
+    .block {
+      position: relative;
+
+      &__sale {
+        position: absolute;
+        background: #00b7f1;
+        border-bottom-left-radius: 5px;
+        padding: 6px;
+        right: 0;
+        top: 0;
+        font-size: 0.75rem;
+      }
+
+      &__wrapper {
+        position: absolute;
+        left: 1.5rem;
+        top: 1.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+        max-width: 14rem;
+
+        &-title {
+          font-weight: 600;
+          font-size: 1.375rem;
+          line-height: 1.75rem;
+        }
+
+        &-description {
+          font-size: 0.75rem;
+          line-height: 1.125rem;
+        }
+
+        .price {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 0.6rem;
+
+          &__wrapper {
+            font-size: 1.125rem;
+            line-height: 1.35em;
+            display: flex;
+            align-items: center;
+
+            gap: 0.7rem;
+
+            &-newPrice {
+              color: #7ac751;
+              font-weight: 700;
+            }
+
+            &-oldPrice {
+              color: #cccccc;
+              font-weight: 600;
+              text-decoration: line-through;
+            }
+          }
+
+          &__btn {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #fff;
+            padding: 7px 10px;
+            background: #7ac751;
+            border-radius: 2px;
+            transition: background 0.3s;
+
+            &:hover {
+              background: #63a142;
+            }
+          }
+        }
+      }
+    }
+  }
+}
